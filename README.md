@@ -2,7 +2,7 @@
 
 A collection of advanced predictive regression modeling challenges submitted on Kaggle.
 
-**Prediction Challenge I — Movie Rating Classification**
+## Prediction Challenge I — Movie Rating Classification
 
 Built a decision tree classifier (rpart) to predict movie ratings ("Great" vs other) from the 2023 movies dataset. 
 Engineered a weighted Delta feature (3Audience - 1.5Income) that improved class separation, computed Audience/Income ratios, and visualized feature distributions with boxplots and barplots across Genre and Content categories. 
@@ -13,7 +13,7 @@ Used 10-fold cross-validation at 80/20 split to evaluate model accuracy.
 - Validation: 10-fold cross-validation via CrossValidation package
 - Stack: R, rpart, rpart.plot, CrossValidation
 
-**Prediction Challenge II — Post-College Salary Prediction**
+## Prediction Challenge II — Post-College Salary Prediction
 
 Predicted post-college salaries using stratified linear regression, building 7 separate models across 6 major categories (Humanities, STEM, Vocational, Professional, Business, Other). 
 Performed extensive EDA with scatter plots and boxplots per major, then engineered custom transformations for each stratum: GPA² and GPA²·log(Tuition) for Humanities, LinkedIn² for Other, GPA^(1/10) for Professional, GPA/Tuition and GPA·LinkedIn interactions for Vocational, and DOB parity-based sub-models for Business. 
@@ -24,7 +24,7 @@ Used automated bidirectional stepwise selection (AIC) to identify significant pr
 - Key transformations: GPA², GPA²·log(Tuition), log(GPA/Tuition), LinkedIn², GPA^(1/10), GPA·LinkedIn, GPA/Tuition
 - Stack: R, rpart, Metrics (MSE), CrossValidation
 
-**Prediction Challenge III — Loan Amount Prediction**
+## Prediction Challenge III — Loan Amount Prediction
 
 Built an ensemble of 8 stratified linear regression models for loan amount prediction, segmenting borrowers by all combinations of home ownership (Yes/No), car ownership (Yes/No), and debt level (0 vs 100K). 
 Applied Income^(1/2) power transformations for the no-home/no-car segments to capture nonlinear income-amount relationships, while using simple linear Income models for asset-owning segments. 
